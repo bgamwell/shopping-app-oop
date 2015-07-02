@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Latest compiled and minified CSS, always goes before custom stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom font -->
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <!-- Custom stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ShopList</title>
+    <meta name="description" content="ShopList: The badass-est shopping list application in the universe.">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="text-center">ShopList</h1>
+          <p class="text-center">The badass-est shopping list application in the universe.</p>
+          <form class="text-center" id="new-item">
+            <div class="form-group">
+              <input type="text" class="form-control" id="item-name" placeholder="What would you like to buy?" autofocus>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Add to the List!">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grocery-list col-md-6 col-md-offset-3">
+
+          <div id="items-list"></div>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- Add javascript to the end of the body to help site speed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- Add underscore -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+
+  <!-- Custom javascript, putting it after jQuery allows custom js to override other scripts -->
+  <script src="script.js"></script>
+
+  <!-- underscore template -->
+  <script type="text/template" id="items-template">
+    <div class="item">
+      <li><%= item %></li>
+        <!-- <button type="button" class="close delete" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+    </div>
+  </script>
+
+</body>
+
+  </body>
+</html>

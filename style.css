@@ -1,0 +1,19 @@
+body {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.food-item {
+  font-size: 28px;
+}
+
+.done {
+  text-decoration: line-through;
+}
